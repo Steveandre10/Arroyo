@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArroyoAlerta</title>
+    <link rel="icon" href="img/logo-app.webp" type="image/webp">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor fila">
+            <a href="#inicio" class="logo">Arroyo<span>Alerta</span></a>
+            <a href="#unete" class="btn-header">Recibir alertas</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="contenedor fila">
+                <div class="inicio-texto">
+                    <p class="etiqueta">Barranquilla y el Atlántico</p>
+                    <h1>Entérate de que el arroyo crece antes de salir de casa</h1>
+                    <p class="subtitulo">Mapa en vivo de los arroyos y alertas antes de que crezcan, directo en tu celular</p>
+                </div>
+                <div class="tarjeta-alerta">
+                    <div class="semaforo">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p class="nivel">Nivel alto</p>
+                    <h3>Arroyo de la 21</h3>
+                    <p class="tiempo">Reportado hace 4 min</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="problema">
+            <div class="contenedor">
+                <h2 class="revelar">El problema</h2>
+                <p class="seccion-texto revelar" style="--retraso: .1s">Cada aguacero fuerte en Barranquilla convierte las calles en una apuesta: nadie sabe en tiempo real cuáles se pueden cruzar.</p>
+            </div>
+
+            <!-- Bloque 1: las cifras -->
+            <div class="zona-crece">
+                <div class="caja-crece">
+                    <div class="caja-contenido">
+                        <p class="caja-etiqueta aparece">En cifras</p>
+                        <p class="dato aparece" data-contar="134">134</p>
+                        <p class="dato-texto aparece">muertes por arroyos en casi 50 años</p>
+
+                        <div class="mini-datos">
+                            <div class="aparece">
+                                <p class="mini-numero">+50</p>
+                                <p>arroyos urbanos; 15 son los más peligrosos</p>
+                            </div>
+                            <div class="aparece">
+                                <p class="mini-numero">6</p>
+                                <p>de los más peligrosos siguen sin canalizar</p>
+                            </div>
+                            <div class="aparece">
+                                <p class="mini-numero">$1,2 billones</p>
+                                <p>invertidos desde 2008 para canalizar 70 km</p>
+                            </div>
+                            <div class="aparece">
+                                <p class="mini-numero">2,29 M</p>
+                                <p>personas en el área metropolitana</p>
+                            </div>
+                        </div>
+
+                        <p class="fuente aparece">Fuente: El Heraldo, “Arroyos: más de 70 km lineales han sido canalizados en Barranquilla”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 2: el impacto -->
+            <div class="zona-crece">
+                <div class="caja-crece caja-impacto">
+                    <div class="caja-contenido">
+                        <p class="caja-etiqueta aparece">En el día a día</p>
+                        <h3 class="impacto-titulo aparece">El impacto va más allá de las obras</h3>
+
+                        <div class="impactos">
+                            <div class="impacto aparece">
+                                <span class="impacto-icono" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg>
+                                </span>
+                                <h4>Accidentes</h4>
+                                <p>por desconocer el estado de las vías</p>
+                            </div>
+                            <div class="impacto aparece">
+                                <span class="impacto-icono" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M3 13l2-6h14l2 6v4H3z"/><path d="M6 17v2"/><path d="M18 17v2"/><path d="M7.5 13.5h.01"/><path d="M16.5 13.5h.01"/></svg>
+                                </span>
+                                <h4>Daños a vehículos</h4>
+                                <p>por cruzar arroyos activos</p>
+                            </div>
+                            <div class="impacto aparece">
+                                <span class="impacto-icono" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4"/><path d="M12 11v10"/></svg>
+                                </span>
+                                <h4>Entregas fallidas</h4>
+                                <p>y pérdidas para domicilios y logística</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona">
+            <div class="contenedor">
+                <h2 class="revelar">Cómo funciona</h2>
+                <div class="fila pasos">
+                    <div class="paso revelar">
+                        <p class="numero">01</p>
+                        <h3>Monitoreamos</h3>
+                        <p>Reportes ciudadanos validados, sensores de nivel y datos de lluvia</p>
+                    </div>
+                    <div class="paso revelar" style="--retraso: .12s">
+                        <p class="numero">02</p>
+                        <h3>Te avisamos</h3>
+                        <p>Recibes la alerta antes del pico del arroyo, por la app o WhatsApp</p>
+                    </div>
+                    <div class="paso revelar" style="--retraso: .24s">
+                        <p class="numero">03</p>
+                        <h3>Tomas otra ruta</h3>
+                        <p>Te sugerimos un camino alterno para que llegues seguro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo">
+            <div class="contenedor">
+                <h2 class="revelar">El equipo</h2>
+                <p class="seccion-texto revelar" style="--retraso: .1s">Proyecto universitario · Corporación Universidad de la Costa (CUC)</p>
+                <div class="fila equipo">
+                    <div class="persona revelar">
+                        <div class="avatar">SN</div>
+                        <h3>Santiago Navarro</h3>
+                        <p class="rol">Analista</p>
+                    </div>
+                    <div class="persona revelar" style="--retraso: .12s">
+                        <div class="avatar">PV</div>
+                        <h3>Pablo Valencia</h3>
+                        <p class="rol">Diseñador</p>
+                    </div>
+                    <div class="persona revelar" style="--retraso: .24s">
+                        <div class="avatar">SS</div>
+                        <h3>Shardy Sarniento</h3>
+                        <p class="rol">Comunicador</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="unete">
+            <div class="contenedor unete-contenido">
+                <img class="app-logo revelar" src="img/logo-app.webp" alt="ArroyoAlerta" width="512" height="512">
+                <h2 class="revelar" style="--retraso: .12s">Recibe las alertas antes de salir</h2>
+                <p class="seccion-texto revelar" style="--retraso: .24s">Únete al canal de WhatsApp y te avisamos cuando un arroyo esté por crecer cerca de ti.</p>
+
+                <div class="botones revelar" style="--retraso: .32s">
+                    <a class="btn btn-whatsapp" href="https://whatsapp.com/channel/0029Vb8pLG39mrGiDpFH452p" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>
+                        Unirme al canal de WhatsApp
+                    </a>
+                    <a class="btn btn-app" href="#" aria-disabled="true">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+                        Descargar la app
+                        <span class="pronto">Próximamente</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>ArroyoAlerta · Proyecto universitario CUC</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
