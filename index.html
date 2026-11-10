@@ -6,6 +6,7 @@
     <title>ArroyoAlerta</title>
     <link rel="icon" href="img/logo-app.webp" type="image/webp">
     <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -134,6 +135,29 @@
             </div>
         </section>
 
+        <section id="mapa">
+            <div class="contenedor">
+                <p class="etiqueta revelar">Mapa en vivo</p>
+                <h2 class="revelar" style="--retraso: .08s">Mira qué arroyos están activos antes de salir</h2>
+                <p class="seccion-texto revelar" style="--retraso: .16s">Las zonas en rojo marcan calles donde el arroyo está crecido. Toca una alerta para ver el detalle.</p>
+
+                <div class="mapa-marco revelar" style="--retraso: .24s">
+                    <div id="mapa-arroyos" class="mapa-lienzo" aria-label="Mapa de alertas de arroyos en Barranquilla"></div>
+
+                    <div class="mapa-panel">
+                        <p class="mapa-panel-titulo"><span class="punto-vivo"></span> Alertas activas</p>
+                        <ul class="mapa-lista"></ul>
+                        <div class="mapa-leyenda">
+                            <span><i class="ley-rojo"></i> Arroyo crecido</span>
+                            <span><i class="ley-amarillo"></i> Precaución</span>
+                        </div>
+                    </div>
+
+                    <p class="mapa-nota">Mapa ilustrativo · alertas de ejemplo</p>
+                </div>
+            </div>
+        </section>
+
         <section id="equipo">
             <div class="contenedor">
                 <h2 class="revelar">El equipo</h2>
@@ -186,5 +210,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script src="js/mapa.js"></script>
 </body>
 </html>
